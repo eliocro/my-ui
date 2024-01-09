@@ -31,6 +31,9 @@
   input:checked + label::before {
     background-color: var(--color-black);
   }
+  input:focus + label {
+    text-decoration: underline;
+  }
 }
 
 .radio-group {
