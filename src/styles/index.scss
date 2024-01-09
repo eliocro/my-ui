@@ -1,6 +1,8 @@
 // Base styling
+@import './base/mixins.scss';
 @import './base/variables.scss';
 @import './base/base.scss';
 
 // Components
 @import './modules/button.scss';
+@import './modules/switch.scss';
