@@ -1,1 +1,1 @@
-console.log('my-ui');
+export { default as Button } from './components/Button';

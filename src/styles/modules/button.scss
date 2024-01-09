@@ -1,0 +1,25 @@
+:root {
+  --button-padding: 1rem;
+
+  --button-color-bg: var(--color-black);
+  --button-color-fg: var(--color-white);
+
+  --button-font-size: 1rem;
+}
+
+.button {
+  padding: var(--button-padding);
+  border: none;
+  border-radius: 0.5rem;
+
+  color: var(--button-color-fg);
+  background-color: var(--button-color-bg);
+
+  font-size: var(--button-font-size);
+  cursor: pointer;
+
+  &:hover,
+  &:focus-visible {
+    opacity: 0.75;
+  }
+}
