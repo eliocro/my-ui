@@ -5,7 +5,9 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
+    "build:components": "tsc && vite build",
+    "build:styles": "sass src/styles:dist/styles --no-source-map",
+    "build": "npm run build:components && npm run build:styles",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
