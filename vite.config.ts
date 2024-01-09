@@ -10,7 +10,7 @@ export default defineConfig({
     lib: {
       entry: resolve(__dirname, 'src/lib.ts'),
       name: 'My-UI',
-      fileName: 'my-ui',
+      fileName: 'index',
       formats: ['es'],
     },
     rollupOptions: {

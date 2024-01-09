@@ -1,17 +1,28 @@
 {
-  "name": "my-ui",
-  "private": true,
+  "name": "@eliocro/my-ui",
+  "author": "Elio Cro",
+  "private": false,
   "version": "0.0.0",
   "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/eliocro/my-ui"
+  },
   "scripts": {
     "dev": "vite",
     "build:components": "tsc && vite build",
     "build:styles": "sass src/styles:dist/styles --no-source-map",
     "build": "npm run build:components && npm run build:styles",
+    "prepublishOnly": "npm run build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
-  "dependencies": {
+  "peerDependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
@@ -26,6 +37,8 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.5",
     "prettier": "^3.1.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "sass": "^1.69.7",
     "typescript": "^5.2.2",
     "vite": "^5.0.8",
