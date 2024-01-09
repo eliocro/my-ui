@@ -1,8 +1,6 @@
 import { useState } from 'react';
 
-import Button from './components/Button';
-import Switch from './components/Switch';
-import RadioGroup from './components/RadioGroup';
+import { Button, RadioGroup, Switch } from './lib';
 import './App.css';
 
 function App() {
