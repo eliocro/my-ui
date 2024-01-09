@@ -11,7 +11,7 @@ function App() {
 
   return (
     <div className="demo-wrapper">
-      <h1>MY-UI Components</h1>
+      <h1>My-UI Components</h1>
       <Button label="This is a button" onClick={() => alert('Hello World!')} />
       <Switch
         name="active"
