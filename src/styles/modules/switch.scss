@@ -9,6 +9,8 @@
   }
 
   label {
+    cursor: pointer;
+
     &::before,
     &::after {
       content: '';
@@ -23,7 +25,7 @@
       height: 1.25rem;
 
       border-radius: 0.675rem;
-      background-color: gray;
+      background-color: var(--color-black);
       transition: background-color 0.3s ease;
     }
     &::after {

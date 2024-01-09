@@ -1,6 +1,6 @@
 import { useId } from 'react';
 
-type Props = {
+type SwitchProps = {
   name: string;
   label: string;
   checked?: boolean;
@@ -12,7 +12,7 @@ export default function Switch({
   label,
   checked,
   onChange,
-}: Props) {
+}: SwitchProps) {
   const id = useId();
   return (
     <div className="switch">
