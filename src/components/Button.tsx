@@ -1,14 +1,20 @@
 import { ReactNode } from 'react';
 
-type ButtonProps = {
+export type ButtonProps = {
   children?: ReactNode;
   label?: string;
   onClick?: () => void;
+  disabled?: boolean;
 };
 
-export default function Button({ label, children, onClick }: ButtonProps) {
+export default function Button({
+  label,
+  children,
+  onClick,
+  disabled,
+}: ButtonProps) {
   return (
-    <button className="button" onClick={onClick}>
+    <button className="button" onClick={onClick} disabled={disabled}>
       {label || children}
     </button>
   );

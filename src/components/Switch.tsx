@@ -1,6 +1,6 @@
 import { useId } from 'react';
 
-type SwitchProps = {
+export type SwitchProps = {
   name: string;
   label: string;
   checked?: boolean;

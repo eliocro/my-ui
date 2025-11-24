@@ -31,13 +31,13 @@
   input:checked + label::before {
     background-color: var(--color-black);
   }
-  input:focus + label {
-    text-decoration: underline;
+  input:focus-visible + label::before {
+    outline: 2px solid var(--color-focus);
+    outline-offset: 2px;
   }
 }
 
 .radio-group {
-  margin: 2rem 0;
   padding: 0;
   border: none;
 

@@ -1,7 +1,7 @@
 .switch {
   position: relative;
-  margin: 2rem 0;
   padding-left: 2.5rem;
+  width: fit-content;
 
   input {
     position: absolute;
@@ -48,7 +48,8 @@
       left: calc(1rem - 2px);
     }
   }
-  input:focus + label {
-    text-decoration: underline;
+  input:focus-visible + label::before {
+    outline: 2px solid var(--color-focus);
+    outline-offset: 2px;
   }
 }

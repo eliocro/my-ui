@@ -1,13 +1,13 @@
 import RadioButton from './RadioButton';
 
-type RadioGroupOption = {
+export type RadioGroupOption = {
   value: string;
   label: string;
 };
 
-type RadioGroupProps = {
+export type RadioGroupProps = {
   name: string;
-  label?: string;
+  label: string;
   options?: RadioGroupOption[];
   value?: string;
   onChange?: (val: string) => void;
