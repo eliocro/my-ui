@@ -25,7 +25,7 @@
       height: 1.25rem;
 
       border-radius: 0.675rem;
-      background-color: var(--color-black);
+      background-color: var(--color-gray);
       transition: background-color 0.3s ease;
     }
     &::after {
@@ -42,7 +42,7 @@
 
   input:checked + label {
     &::before {
-      background-color: lime;
+      background-color: var(--color-black);
     }
     &::after {
       left: calc(1rem - 2px);
